@@ -132,6 +132,7 @@ def main():
                         saveToGoogleSheet(output)
                     
                 st.success("Successful!")
+                st.markdown('[Here is the output link](https://drive.google.com/drive/folders/1YmMkpMsTvX_7RivwXfabkwLnbG7FiI2Y)', unsafe_allow_html=True)
                 
     except Exception as e:
         st.error(f"An error occurred main: {str(e)}")
