@@ -21,8 +21,8 @@ import boto3
 from botocore.exceptions import ClientError
 from botocore.config import Config
 # Load the .env file
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 def saveToGoogleSheet(data):
 
