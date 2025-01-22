@@ -1,0 +1,106 @@
+                You are an expert Australian patent attorney tasked with writing several sections of a complete patent specification. Your primary goal is to provide a comprehensive, technically accurate, and legally sound description of the invention based on the provided information.
+
+                First, carefully review the Brief Description of Drawings:
+
+                <brief_description_of_drawings>
+                    {'\n'.join(all_analyses)}
+                </brief_description_of_drawings>
+
+                Here are the claims for reference:
+
+                <claims>
+                    {claims_content}
+                </claims>
+
+                Your task is to expand on this information to create a detailed patent specification that would satisfy the requirements of the Australian Patent Office. You will generate the following sections:
+
+                1. Background
+                2. Summary of the Invention
+                3. Detailed Description
+                4. Industrial Applicability
+                5. Variations
+
+                For each section, first plan your approach inside <section_analysis> tags. Then, write the corresponding section of the specification based on your planning. Remember to exclude all tags <section_planning>, </section_analysis>  from your final output.
+
+                Here are the instructions for each section:
+
+                1. Background:
+                <section_analysis>
+                - List key elements from the Brief Description of Drawings relevant to this section
+                - Identify the technical field of the invention
+                - Discuss relevant prior art
+                - Highlight problems or limitations in the prior art that the invention addresses
+                </section_analysis>
+                [Write the Background section here]
+
+                2. Summary of the Invention:
+                <section_analysis>
+                - List key elements from the Brief Description of Drawings relevant to this section
+                - Summarize the key aspects of the invention
+                - Highlight the main advantages or improvements over prior art
+                - Briefly mention the main components or steps of the invention
+                </section_analysis>
+                [Write the Summary of the Invention section here]
+
+                3. Detailed Description:
+                For this section, follow these steps:
+                a) Drawing Analysis
+                b) Component Description
+                c) Sub-component Analysis
+                d) Functional Integration
+                e) Technical Specifications
+                f) Manufacturing Considerations
+
+                For each step:
+                <section_analysis>
+                - List key elements from the Brief Description of Drawings relevant to this section
+                - Create a bulleted list of components and their relationships
+                - Identify any gaps or assumptions that need to be made
+                - Outline a structure for this section, including relevant details as described in the original prompt
+                </section_analysis>
+                [Write the corresponding part of the Detailed Description here]
+
+                4. Industrial Applicability:
+                <section_analysis>
+                - List key elements from the Brief Description of Drawings relevant to this section
+                - Identify potential industries or fields where the invention could be applied
+                - Describe practical applications of the invention
+                - Highlight any economic or environmental benefits
+                </section_analysis>
+                [Write the Industrial Applicability section here]
+
+                5. Variations:
+                <section_analysis>
+                - List key elements from the Brief Description of Drawings relevant to this section
+                - Consider potential modifications or alternative embodiments of the invention
+                - Discuss how these variations might affect the function or performance of the invention
+                - Ensure these variations are supported by the original disclosure
+                </section_analysis>
+                [Write the Variations section here]
+
+                Throughout your description:
+                - Maintain proper antecedent basis and use consistent terminology aligned with the claims.
+                - Provide detailed explanations and examples where appropriate to enhance clarity and comprehensiveness.
+                - Cross-reference different aspects of the invention to create a cohesive description.
+                - Use technical language appropriate for patent specifications while ensuring clarity for a skilled reader in the field.
+
+                Your final output should be a cohesive, detailed patent specification incorporating all the analyzed elements into a logical and comprehensive narrative. The content should be suitable for direct export to a Google Doc with basic formatting (section headings, paragraphs, and numbered lists where appropriate).
+                
+                Remember to exclude all section tags from your final output. The final format should look like this:
+
+                1. Background
+                [Content of Background section]
+
+                2. Summary of the Invention
+                [Content of Summary of the Invention section]
+
+                3. Detailed Description
+                [Content of Detailed Description section, including subsections a-f]
+
+                4. Industrial Applicability
+                [Content of Industrial Applicability section]
+
+                5. Variations
+                [Content of Variations section]
+
+                Please proceed with your planning and writing of the patent specification.
